@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-$layout-breakpoint-small: 490px;
+$layout-breakpoint-small: 480px;
 
 @media screen and (max-width: $layout-breakpoint-small) {
     .container{
