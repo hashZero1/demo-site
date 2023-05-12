@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@mixin line{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 40px;
+    display: block;
+    background-color: rgb(26, 133, 133);
+}
+
+$layout-breakpoint-small: 490px;
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container1{
+    margin-top: 20px;
+
+    .content-heading{
+        display: flex;
+        background-image: linear-gradient(to right, rgba(15, 15, 15, 0.4), rgba(15, 15, 15, 0.4)), url('https://www.xivtech.io./download.png');
+        height:500px;
+        color: rgb(241, 241, 241);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-size: 4.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+        p{
+            font-size: 1.4rem;
+            margin-top: 10px;
+        }
+    }
+    .content-sub{
+        display: flex;
+        justify-content:space-around;
+        width: 40%;
+        margin: auto;
+        margin-top: 2em;
+        text-transform: capitalize;
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 5rem;
+       }
+       .content-para{
+        width: 65%;
+        line-height: 30px;
+        margin: auto;
+        text-align:center;
+        color: rgb(78, 78, 78);
+        font-size: 20px;
+       }
+       .extra-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+
+        .wrapper{
+            transform: translate(-50%, -50%);
+          }
+          
+          button{
+            display: block;
+            width: 200px;
+            height: 54px;
+            line-height: 40px;
+            font-size: 18px;
+            font-family: sans-serif;
+            color: #f1f1f1;
+            border: 2px solid #333;
+            letter-spacing: 2px;
+            text-align: center;
+            background-color: #333;
+            position: relative;
+            cursor: pointer;
+            transition: all .35s;
+          }
+          
+          button span{
+            position: relative;
+            z-index: 2;
+          }
+          
+          button:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #e4e4e4;
+            transition: all .35s;
+          }
+          
+          button:hover{
+            color: #0f0f0f;
+          }
+          
+          button:hover:after{
+            width: 100%;
+          }
+         
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: $layout-breakpoint-small) {
+    .container1{
+    
+        .content-heading{
+            display: flex;
+            background-image: linear-gradient(to right, rgba(15, 15, 15, 0.4), rgba(15, 15, 15, 0.4)), url('https://www.xivtech.io./download.png');
+            background-size: cover;
+            height:400px;
+            color: rgb(241, 241, 241);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            h1{
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                font-weight: 400;
+            }
+            p{
+                font-size: 0.8rem;
+                margin-top: 10px;
+            }
+        }
+        .content-sub{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            margin: auto;
+            margin-top: 2em;
+            text-transform: capitalize;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 5rem;
+           }
+           .content-para{
+            width: 65%;
+            line-height: 30px;
+            margin: auto;
+            text-align:center;
+            color: rgb(78, 78, 78);
+            font-size: 20px;
+           }
+           .extra-links{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+    
+            .wrapper{
+                transform: translate(-50%, -50%);
+              }
+              
+              button{
+                display: block;
+                width: 200px;
+                height: 54px;
+                padding: 10px 20px;
+                line-height: 40px;
+                font-size: 15px;
+                font-family: sans-serif;
+                color: #f1f1f1;
+                border: 2px solid #333;
+                letter-spacing: 2px;
+                text-align: center;
+                background-color: #333;
+                position: relative;
+                cursor: pointer;
+                transition: all .35s;
+              }
+              
+              button span{
+                position: relative;
+                z-index: 2;
+              }
+              
+              button:after{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: #e4e4e4;
+                transition: all .35s;
+              }
+              
+              button:hover{
+                color: #0f0f0f;
+              }
+              
+              button:hover:after{
+                width: 100%;
+              }
+             
+        }
+    
+    }
+}
+
+
+
